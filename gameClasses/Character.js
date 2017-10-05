@@ -18,13 +18,15 @@ var Character = IgeEntity.extend({
 			self.addComponent(IgeAnimationComponent)
 				.depth(1);
 			
-			var avatar = 'hello<br>Goodbye';
+			/*var avatar = 'hello<br>Goodbye';
 			var html2png = require('html2png');
 			let imgSrc = await
 			html2png(avatar,
 			{height: 90, width: 90});
 			// Load the character texture file
-			this._characterTexture = new IgeCellSheet("${imgSrc}", 4, 4, 128, 192);
+			this._characterTexture = new IgeCellSheet("${imgSrc}", 4, 4, 128, 192);*/
+			
+			this._characterTexture = new IgeCellSheet('assets2/textures/sprites/11sprite.png', 4, 4, 128, 192);
 			
 	
 			// Wait for the texture to load
